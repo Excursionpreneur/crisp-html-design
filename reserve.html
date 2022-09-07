@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Website Design</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul>
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="reserve.html" class="btn">Reserve</a>
+        </nav>
+    </div>
+
+    <div>
+
+        <fieldset>
+            <form action="/action_page.php">
+                <h1>Reserve Your Model Now!</h1>
+                <div class="formcontainer">
+                <hr/>
+                <div class="container">
+                  <label for="uname"><strong>Username</strong></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="psw"><strong>Password</strong></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+                <button type="submit">Login</button>
+                <div class="container" style="background-color: #eee">
+                  <label style="padding-left: 15px">
+                  <input type="checkbox"  checked="checked" name="remember"> Remember me
+                  </label>
+                  <span class="psw"><a href="#"> Forgot password?</a></span>
+                </div>
+              </form>
+        </fieldset>
+
+    </div>
+
+    <script>
+        var header = document.getElementById("header");
+        var ms = document.getElementById("models");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        var model = document.getElementById("model");
+
+        ms.onclick = function(){
+            header.style.backgroundImage = "url(images/image-1.png)";
+            model.innerHTML = "Model S";
+        }
+        m3.onclick = function(){
+            header.style.backgroundImage = "url(images/image-2.png)";
+            model.innerHTML = "Model 3";
+        }
+        mx.onclick = function(){
+            header.style.backgroundImage = "url(images/image-3.png)";
+            model.innerHTML = "Model X";
+        }
+        my.onclick = function(){
+            header.style.backgroundImage = "url(images/image-4.png)";
+            model.innerHTML = "Model Y";
+        }
+
+
+    </script>
+</div>
+    </body>
+</html>
